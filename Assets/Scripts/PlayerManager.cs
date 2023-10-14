@@ -21,13 +21,18 @@ public class PlayerManager : MonoBehaviour
     Vector3 velocity;
     private ChestManager chest;
 
+    public GameObject steirsLav;
+
     [SerializeField] TextMeshProUGUI kristalText;
 
     [SerializeField] int kristal;
+    [SerializeField] int buzBall;
 
     [SerializeField] GameObject Steirs;
 
+    public int buzTýlsýmý;
 
+    public int LavaTýlsýmý;
     private void Awake()
     {
         rgb = GetComponent<Rigidbody>();
@@ -105,22 +110,66 @@ public class PlayerManager : MonoBehaviour
             UpdateKristal();
             Destroy(other.gameObject);
         }
-        if (other.transform.CompareTag("ChestArea") && number == 1)
-        {
-            chestAnimator.SetBool("OpenChest", true);
-        }
         if (other.transform.CompareTag("ChestArea") && number == 2 && kristal >= 3)
         {
             chestAnimator.SetBool("OpenChest", true);
             Steirs.SetActive(true);
             Debug.Log("Test");  
         }
-
+        if (other.transform.CompareTag("ChestArea") && number == 3)
+        {
+            chestAnimator.SetBool("OpenChest", true);
+            Debug.Log("Buz Týlsýmýný aldýk");
+            DefultMap(1);
+        }
+        if (other.gameObject.CompareTag("BuzBall"))
+        {
+            buzBall += 1;
+            UpdateBuz();
+            Destroy(other.gameObject);
+            if (buzBall >= 3)
+            {
+                steirsLav.SetActive(false);
+            }
+        }
+        if (other.transform.CompareTag("ChestArea") && number == 1)
+        {
+            chestAnimator.SetBool("OpenChest", true);
+            BuzMap(1);
+            Debug.Log("Lav Týlsýmýný aldýk");
+        }
+        if (other.gameObject.CompareTag("Dead"))
+        {
+            Debug.Log("Öldün");
+        }
     }
 
     public void UpdateKristal()
     {
         kristalText.text = kristal.ToString();
+    }
+    public void UpdateBuz()
+    {
+        kristalText.text = buzBall.ToString();
+    }
+
+    public void DefultMap(int t)
+    {
+        buzTýlsýmý += t;
+        if (buzTýlsýmý > 0)
+        {
+            // set active alev
+        }
+        // sunaða gittiðimize bir ateþ yanýcak -1
+    }
+    public void BuzMap(int y)
+    {
+        LavaTýlsýmý += y;
+        if (LavaTýlsýmý > 0)
+        {
+            // set active toprak
+        }
+        // sunaða gittiðimize bir ateþ yanýcak -1
     }
 
 }

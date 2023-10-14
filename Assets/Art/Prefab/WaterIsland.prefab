@@ -207,7 +207,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1848333357312031873
 Transform:
   m_ObjectHideFlags: 0
@@ -540,6 +540,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466057166364137 stripped
@@ -558,7 +562,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148009675179859 stripped
@@ -1320,6 +1324,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466057323979061 stripped
@@ -1338,7 +1346,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148009348365199 stripped
@@ -1510,6 +1518,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466057461298746 stripped
@@ -1528,7 +1540,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148009236081792 stripped
@@ -1607,6 +1619,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466057484799282 stripped
@@ -1625,7 +1641,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148009188317064 stripped
@@ -2318,6 +2334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466056552696620 stripped
@@ -2336,7 +2356,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148009046806934 stripped
@@ -2415,6 +2435,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466056655138471 stripped
@@ -2433,7 +2457,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148008968893469 stripped
@@ -2512,6 +2536,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466056694997392 stripped
@@ -2530,7 +2558,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148008937487146 stripped
@@ -2609,6 +2637,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466056850563463 stripped
@@ -2627,7 +2659,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148008874916669 stripped
@@ -2862,6 +2894,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466056803111129 stripped
@@ -2880,7 +2916,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148008829553251 stripped
@@ -2959,6 +2995,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466056805442162 stripped
@@ -2977,7 +3017,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148008827697352 stripped
@@ -3735,6 +3775,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466056170742631 stripped
@@ -3753,7 +3797,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148008480340445 stripped
@@ -3832,6 +3876,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466056215074732 stripped
@@ -3850,7 +3898,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148008444972310 stripped
@@ -4236,6 +4284,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466056461568905 stripped
@@ -4254,7 +4306,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148008232161587 stripped
@@ -5025,6 +5077,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466055865508388 stripped
@@ -5043,7 +5099,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148007619360926 stripped
@@ -5215,6 +5271,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466055877135049 stripped
@@ -5233,7 +5293,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148007565971571 stripped
