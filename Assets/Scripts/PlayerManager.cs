@@ -10,7 +10,7 @@ public class PlayerManager : MonoBehaviour
     private float turnSmoothVelocity;
     Rigidbody rgb;
     CharacterController controller;
-    Animator animator;
+    public Animator animator;
 
     public float jumpHeight;
     public float gravity;
@@ -21,7 +21,6 @@ public class PlayerManager : MonoBehaviour
     {
         rgb = GetComponent<Rigidbody>();
         controller = GetComponent<CharacterController>();
-        animator = GetComponent<Animator>();
     }
     private void Start()
     {
@@ -33,17 +32,21 @@ public class PlayerManager : MonoBehaviour
     {
         isGrounded = Physics.CheckSphere(transform.position, .1f, 1);
 
+        animator.SetBool("Jump", !isGrounded);
         if (isGrounded && velocity.y < 0)
         {
             velocity.y = -1; 
         }
 
+
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
-        if (direction.magnitude >= 0.1f)
+        if (direction.magnitude >= 0.1f && isGrounded)
         {
+            //
+            animator.SetBool("Run", true);
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSpeedTime);
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
@@ -51,11 +54,16 @@ public class PlayerManager : MonoBehaviour
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
+        else
+        {
+            // ýdle
+            animator.SetBool("Run", false);
+        }
         //jumping
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt((jumpHeight * 10) * -2f * gravity);
-
+            animator.SetBool("Run", false);
         }
 
         if (velocity.y > -20)
