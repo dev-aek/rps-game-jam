@@ -116,6 +116,7 @@ public class PlayerManager : MonoBehaviour
             chestAnimator.SetBool("OpenChest", true);
             Steirs.SetActive(true);
             Debug.Log("Test");  
+            // ilk adý mor
         }
         if (other.transform.CompareTag("ChestArea") && number == 3)
         {
@@ -123,6 +124,7 @@ public class PlayerManager : MonoBehaviour
             Debug.Log("Buz Týlsýmýný aldýk");
             //DefultMap(1);
             elements[0] = true;
+            // mor adanýn üstü
         }
         if (other.gameObject.CompareTag("BuzBall"))
         {
@@ -164,6 +166,7 @@ public class PlayerManager : MonoBehaviour
         if (other.gameObject.CompareTag("Dead"))
         {
             Debug.Log("Öldün");
+            this.transform.position = new Vector3(-7, 2, 10);
         }
 
         if (other.gameObject.tag == "Boost")
@@ -195,6 +198,7 @@ public class PlayerManager : MonoBehaviour
             {
                 elements[i] = false;
                 //sunak açýlacak
+                
             } 
         }
     }
