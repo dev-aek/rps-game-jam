@@ -30,6 +30,11 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] int buzBall;
 
     [SerializeField] GameObject Steirs;
+    [SerializeField] GameObject[] headsOnFire;
+    [SerializeField] GameObject[] bridges;
+    [SerializeField] GameObject[] elementels;
+    [SerializeField] GameObject BoostParticle;
+
 
     public bool[] elements;
     //public int buzTýlsýmý;
@@ -169,10 +174,16 @@ public class PlayerManager : MonoBehaviour
             this.transform.position = new Vector3(-7, 2, 10);
         }
 
+        if (other.gameObject.tag == "Sunak")
+        {
+            SunakCheck();
+        }
+
         if (other.gameObject.tag == "Boost")
         {
             if (BallManager.isBoosed)
             {
+                BoostParticle.SetActive(true);
                 transform.DOMoveY(13, 3f);
                 //gravity = 5;
                 Debug.Log("Boost");
@@ -180,7 +191,6 @@ public class PlayerManager : MonoBehaviour
 
         }
     }
-
     public void UpdateKristal()
     {
         kristalText.text = kristal.ToString();
@@ -198,6 +208,18 @@ public class PlayerManager : MonoBehaviour
             {
                 elements[i] = false;
                 //sunak açýlacak
+                if (i <= 3)
+                {
+                    headsOnFire[i].active = true;
+                    bridges[i].active = true;
+                }
+
+
+                if (i !=0)
+                {
+                    headsOnFire[i - 1].active = false;
+                }
+                elementels[i].active = true;
                 
             } 
         }

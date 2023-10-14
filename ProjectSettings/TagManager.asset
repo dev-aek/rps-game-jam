@@ -10,6 +10,8 @@ TagManager:
   - Dead
   - Buzo
   - Boost
+  - Sunak
+  - Dead2
   layers:
   - Default
   - TransparentFX
@@ -18,7 +20,7 @@ TagManager:
   - Water
   - UI
   - 
-  - 
+  - PostProsesing
   - 
   - 
   - 
