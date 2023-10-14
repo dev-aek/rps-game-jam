@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using DG.Tweening;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -30,9 +31,9 @@ public class PlayerManager : MonoBehaviour
 
     [SerializeField] GameObject Steirs;
 
-    public int buzTýlsýmý;
-
-    public int LavaTýlsýmý;
+    public bool[] elements;
+    //public int buzTýlsýmý;
+    //public int LavaTýlsýmý;
     private void Awake()
     {
         rgb = GetComponent<Rigidbody>();
@@ -120,7 +121,8 @@ public class PlayerManager : MonoBehaviour
         {
             chestAnimator.SetBool("OpenChest", true);
             Debug.Log("Buz Týlsýmýný aldýk");
-            DefultMap(1);
+            //DefultMap(1);
+            elements[0] = true;
         }
         if (other.gameObject.CompareTag("BuzBall"))
         {
@@ -135,12 +137,44 @@ public class PlayerManager : MonoBehaviour
         if (other.transform.CompareTag("ChestArea") && number == 1)
         {
             chestAnimator.SetBool("OpenChest", true);
-            BuzMap(1);
+            elements[1] = true;
             Debug.Log("Lav Týlsýmýný aldýk");
         }
+        if (other.transform.CompareTag("ChestArea") && number == 4)
+        {
+            chestAnimator.SetBool("OpenChest", true);
+            elements[2] = true;
+            Debug.Log("Toprak Týlsýmýný aldýk");
+        }
+        if (other.transform.CompareTag("ChestArea") && number == 5)
+        {
+            chestAnimator.SetBool("OpenChest", true);
+            elements[3] = true;
+            Debug.Log("Hava Týlsýmýný aldýk");
+        }
+        if (other.transform.CompareTag("ChestArea") && number == 6)
+        {
+            chestAnimator.SetBool("OpenChest", true);
+            elements[4] = true;
+            Debug.Log("Default Týlsýmýný aldýk");
+            other.transform.DOMoveY(0,2f);
+
+        }
+
         if (other.gameObject.CompareTag("Dead"))
         {
             Debug.Log("Öldün");
+        }
+
+        if (other.gameObject.tag == "Boost")
+        {
+            if (BallManager.isBoosed)
+            {
+                transform.DOMoveY(13, 3f);
+                //gravity = 5;
+                Debug.Log("Boost");
+            }
+
         }
     }
 
@@ -153,23 +187,17 @@ public class PlayerManager : MonoBehaviour
         kristalText.text = buzBall.ToString();
     }
 
-    public void DefultMap(int t)
+    public void SunakCheck()
     {
-        buzTýlsýmý += t;
-        if (buzTýlsýmý > 0)
+        for (int i = 0; i < elements.Length; i++)
         {
-            // set active alev
+            if (elements[i])
+            {
+                elements[i] = false;
+                //sunak açýlacak
+            } 
         }
-        // sunaða gittiðimize bir ateþ yanýcak -1
     }
-    public void BuzMap(int y)
-    {
-        LavaTýlsýmý += y;
-        if (LavaTýlsýmý > 0)
-        {
-            // set active toprak
-        }
-        // sunaða gittiðimize bir ateþ yanýcak -1
-    }
+
 
 }

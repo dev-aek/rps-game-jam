@@ -8,6 +8,8 @@ TagManager:
   - KristalBall
   - BuzBall
   - Dead
+  - Buzo
+  - Boost
   layers:
   - Default
   - TransparentFX
