@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b562dcabd1ca4ba4fbce4095d0ab7d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChestNumber: 1
+  ChestNumber: 5
 --- !u!1001 &4693072867791025022
 PrefabInstance:
   m_ObjectHideFlags: 0
