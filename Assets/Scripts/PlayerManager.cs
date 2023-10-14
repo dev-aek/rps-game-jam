@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -11,12 +13,26 @@ public class PlayerManager : MonoBehaviour
     Rigidbody rgb;
     CharacterController controller;
     public Animator animator;
-
+    public Animator chestAnimator;
+    int number;
     public float jumpHeight;
     public float gravity;
     bool isGrounded;
     Vector3 velocity;
+    private ChestManager chest;
 
+    public GameObject steirsLav;
+
+    [SerializeField] TextMeshProUGUI kristalText;
+
+    [SerializeField] int kristal;
+    [SerializeField] int buzBall;
+
+    [SerializeField] GameObject Steirs;
+
+    public int buzTýlsýmý;
+
+    public int LavaTýlsýmý;
     private void Awake()
     {
         rgb = GetComponent<Rigidbody>();
@@ -35,7 +51,7 @@ public class PlayerManager : MonoBehaviour
         animator.SetBool("Jump", !isGrounded);
         if (isGrounded && velocity.y < 0)
         {
-            velocity.y = -1; 
+            velocity.y = -1;
         }
 
 
@@ -43,7 +59,7 @@ public class PlayerManager : MonoBehaviour
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
-        if (direction.magnitude >= 0.1f )
+        if (direction.magnitude >= 0.1f)
         {
             //
             if (isGrounded)
@@ -75,4 +91,85 @@ public class PlayerManager : MonoBehaviour
         }
         controller.Move(velocity * Time.deltaTime);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+
+        if (other.gameObject.GetComponent<ChestManager>() != null)
+        {
+            number = other.gameObject.GetComponent<ChestManager>().ChestNumber;
+        }
+        if (other.GetComponentInChildren<Animator>() != null)
+        {
+            chestAnimator = other.GetComponentInChildren<Animator>();
+        }
+
+        if (other.gameObject.CompareTag("KristalBall"))
+        {
+            kristal += 1;
+            UpdateKristal();
+            Destroy(other.gameObject);
+        }
+        if (other.transform.CompareTag("ChestArea") && number == 2 && kristal >= 3)
+        {
+            chestAnimator.SetBool("OpenChest", true);
+            Steirs.SetActive(true);
+            Debug.Log("Test");  
+        }
+        if (other.transform.CompareTag("ChestArea") && number == 3)
+        {
+            chestAnimator.SetBool("OpenChest", true);
+            Debug.Log("Buz Týlsýmýný aldýk");
+            DefultMap(1);
+        }
+        if (other.gameObject.CompareTag("BuzBall"))
+        {
+            buzBall += 1;
+            UpdateBuz();
+            Destroy(other.gameObject);
+            if (buzBall >= 3)
+            {
+                steirsLav.SetActive(false);
+            }
+        }
+        if (other.transform.CompareTag("ChestArea") && number == 1)
+        {
+            chestAnimator.SetBool("OpenChest", true);
+            BuzMap(1);
+            Debug.Log("Lav Týlsýmýný aldýk");
+        }
+        if (other.gameObject.CompareTag("Dead"))
+        {
+            Debug.Log("Öldün");
+        }
+    }
+
+    public void UpdateKristal()
+    {
+        kristalText.text = kristal.ToString();
+    }
+    public void UpdateBuz()
+    {
+        kristalText.text = buzBall.ToString();
+    }
+
+    public void DefultMap(int t)
+    {
+        buzTýlsýmý += t;
+        if (buzTýlsýmý > 0)
+        {
+            // set active alev
+        }
+        // sunaða gittiðimize bir ateþ yanýcak -1
+    }
+    public void BuzMap(int y)
+    {
+        LavaTýlsýmý += y;
+        if (LavaTýlsýmý > 0)
+        {
+            // set active toprak
+        }
+        // sunaða gittiðimize bir ateþ yanýcak -1
+    }
+
 }

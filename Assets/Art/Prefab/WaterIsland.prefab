@@ -207,7 +207,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1848333357312031873
 Transform:
   m_ObjectHideFlags: 0
@@ -269,7 +269,7 @@ Transform:
   - {fileID: 2174148007677872965}
   - {fileID: 2174148008290327339}
   - {fileID: 2174148007776090413}
-  - {fileID: 2174148009520742829}
+  - {fileID: 4827737517769047155}
   - {fileID: 427420083563047015}
   - {fileID: 2439223634707769316}
   - {fileID: 4055419325565087023}
@@ -540,6 +540,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466057166364137 stripped
@@ -558,7 +562,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148009675179859 stripped
@@ -814,126 +818,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 43b3c8652df686d40aa588e3a333e786, type: 3}
   m_PrefabInstance: {fileID: 1848333356321527067}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1848333356323186246
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1848333357776490887}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: a6b00dc340c928d43bed6550b24cb971, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a6b00dc340c928d43bed6550b24cb971, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.47088
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a6b00dc340c928d43bed6550b24cb971, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.47088
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a6b00dc340c928d43bed6550b24cb971, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.47088
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a6b00dc340c928d43bed6550b24cb971, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.9672832
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a6b00dc340c928d43bed6550b24cb971, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -7.9718094
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a6b00dc340c928d43bed6550b24cb971, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.0723011
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a6b00dc340c928d43bed6550b24cb971, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.56012464
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a6b00dc340c928d43bed6550b24cb971, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a6b00dc340c928d43bed6550b24cb971, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.8284084
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a6b00dc340c928d43bed6550b24cb971, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a6b00dc340c928d43bed6550b24cb971, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a6b00dc340c928d43bed6550b24cb971, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 111.871
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a6b00dc340c928d43bed6550b24cb971, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4683669308469848369, guid: a6b00dc340c928d43bed6550b24cb971, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: e992ae1e08fecd948b8c98bc830b0884, type: 2}
-    - target: {fileID: 919132149155446097, guid: a6b00dc340c928d43bed6550b24cb971, type: 3}
-      propertyPath: m_Name
-      value: chest32 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7202271454713460447, guid: a6b00dc340c928d43bed6550b24cb971, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: e992ae1e08fecd948b8c98bc830b0884, type: 2}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a6b00dc340c928d43bed6550b24cb971, type: 3}
---- !u!1 &1542466057278266135 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a6b00dc340c928d43bed6550b24cb971, type: 3}
-  m_PrefabInstance: {fileID: 1848333356323186246}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1848333356856771038
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542466057278266135}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.826541, y: 2.605767, z: 1.8039826}
-  m_Center: {x: 0.047942627, y: 2.3605757, z: 0.07202855}
---- !u!95 &1848333356856771039
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542466057278266135}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9cfe28e3946f31640946a631ea143dfe, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!4 &2174148009520742829 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a6b00dc340c928d43bed6550b24cb971, type: 3}
-  m_PrefabInstance: {fileID: 1848333356323186246}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1848333356380146858
 PrefabInstance:
@@ -1440,6 +1324,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466057323979061 stripped
@@ -1458,7 +1346,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148009348365199 stripped
@@ -1630,6 +1518,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466057461298746 stripped
@@ -1648,7 +1540,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148009236081792 stripped
@@ -1727,6 +1619,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466057484799282 stripped
@@ -1745,7 +1641,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148009188317064 stripped
@@ -2438,6 +2334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466056552696620 stripped
@@ -2456,7 +2356,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148009046806934 stripped
@@ -2535,6 +2435,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466056655138471 stripped
@@ -2553,7 +2457,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148008968893469 stripped
@@ -2632,6 +2536,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466056694997392 stripped
@@ -2650,7 +2558,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148008937487146 stripped
@@ -2729,6 +2637,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466056850563463 stripped
@@ -2747,7 +2659,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148008874916669 stripped
@@ -2982,6 +2894,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466056803111129 stripped
@@ -3000,7 +2916,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148008829553251 stripped
@@ -3079,6 +2995,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466056805442162 stripped
@@ -3097,7 +3017,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148008827697352 stripped
@@ -3855,6 +3775,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466056170742631 stripped
@@ -3873,7 +3797,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148008480340445 stripped
@@ -3952,6 +3876,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466056215074732 stripped
@@ -3970,7 +3898,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148008444972310 stripped
@@ -4356,6 +4284,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466056461568905 stripped
@@ -4374,7 +4306,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148008232161587 stripped
@@ -5145,6 +5077,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466055865508388 stripped
@@ -5163,7 +5099,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148007619360926 stripped
@@ -5335,6 +5271,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: water_island2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!1 &1542466055877135049 stripped
@@ -5353,7 +5293,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 816e484d3e506bc4385b82dca1f78b9b, type: 3}
 --- !u!4 &2174148007565971571 stripped
@@ -5656,6 +5596,68 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2efe829d5851077419ccb0afdfa526ce, type: 3}
   m_PrefabInstance: {fileID: 5446336000156680928}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6379275812890416440
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1848333357776490887}
+    m_Modifications:
+    - target: {fileID: 1907323079086844235, guid: 910137691e8f18c468805120537f9bdd, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907323079086844235, guid: 910137691e8f18c468805120537f9bdd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.9672852
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907323079086844235, guid: 910137691e8f18c468805120537f9bdd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7.373
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907323079086844235, guid: 910137691e8f18c468805120537f9bdd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.0723009
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907323079086844235, guid: 910137691e8f18c468805120537f9bdd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.56012464
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907323079086844235, guid: 910137691e8f18c468805120537f9bdd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907323079086844235, guid: 910137691e8f18c468805120537f9bdd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.8284084
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907323079086844235, guid: 910137691e8f18c468805120537f9bdd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907323079086844235, guid: 910137691e8f18c468805120537f9bdd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907323079086844235, guid: 910137691e8f18c468805120537f9bdd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907323079086844235, guid: 910137691e8f18c468805120537f9bdd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7627896704730400308, guid: 910137691e8f18c468805120537f9bdd, type: 3}
+      propertyPath: m_Name
+      value: ChestMain
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 910137691e8f18c468805120537f9bdd, type: 3}
+--- !u!4 &4827737517769047155 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1907323079086844235, guid: 910137691e8f18c468805120537f9bdd, type: 3}
+  m_PrefabInstance: {fileID: 6379275812890416440}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7478338157860070680
 PrefabInstance:
