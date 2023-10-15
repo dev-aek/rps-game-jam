@@ -10,7 +10,7 @@ public class UIMamanager : MonoBehaviour
     public string[] dialogs;
     public GameObject dialogPanel;
     public TextMeshProUGUI dialogText;
-
+    public int dialogLevel = 1;
 
     void Awake()
     {
@@ -26,7 +26,7 @@ public class UIMamanager : MonoBehaviour
     }
     void Start()
     {
-        
+        SetDialog(0);
     }
 
     // Update is called once per frame

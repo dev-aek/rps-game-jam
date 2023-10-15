@@ -12,6 +12,7 @@ TagManager:
   - Boost
   - Sunak
   - Dead2
+  - Dede
   layers:
   - Default
   - TransparentFX

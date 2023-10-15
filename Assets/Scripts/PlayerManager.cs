@@ -198,6 +198,13 @@ public class PlayerManager : MonoBehaviour
             }
 
         }
+
+        if (other.gameObject.tag == "Dede")
+        {
+            Destroy(other.gameObject);
+            UIMamanager.Instance.SetDialog(UIMamanager.Instance.dialogLevel);
+            UIMamanager.Instance.dialogLevel += 1;
+        }
     }
     public void UpdateKristal()
     {
