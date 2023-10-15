@@ -115,10 +115,12 @@ public class PlayerManager : MonoBehaviour
             kristal += 1;
             UpdateKristal();
             Destroy(other.gameObject);
+            AudioManager.Instance.PlaySFX("Collect");
         }
         if (other.transform.CompareTag("ChestArea") && number == 2 && kristal >= 3)
         {
             chestAnimator.SetBool("OpenChest", true);
+            AudioManager.Instance.PlaySFX("Chest");
             Steirs.SetActive(true);
             Debug.Log("Test");  
             // ilk adý mor
@@ -126,6 +128,7 @@ public class PlayerManager : MonoBehaviour
         if (other.transform.CompareTag("ChestArea") && number == 3)
         {
             chestAnimator.SetBool("OpenChest", true);
+            AudioManager.Instance.PlaySFX("Chest");
             Debug.Log("Buz Týlsýmýný aldýk");
             //DefultMap(1);
             elements[0] = true;
@@ -136,6 +139,7 @@ public class PlayerManager : MonoBehaviour
             buzBall += 1;
             UpdateBuz();
             Destroy(other.gameObject);
+            AudioManager.Instance.PlaySFX("Collect");
             if (buzBall >= 3)
             {
                 steirsLav.SetActive(false);
@@ -144,24 +148,28 @@ public class PlayerManager : MonoBehaviour
         if (other.transform.CompareTag("ChestArea") && number == 1)
         {
             chestAnimator.SetBool("OpenChest", true);
+            AudioManager.Instance.PlaySFX("Chest");
             elements[1] = true;
             Debug.Log("Lav Týlsýmýný aldýk");
         }
         if (other.transform.CompareTag("ChestArea") && number == 4)
         {
             chestAnimator.SetBool("OpenChest", true);
+            AudioManager.Instance.PlaySFX("Chest");
             elements[2] = true;
             Debug.Log("Toprak Týlsýmýný aldýk");
         }
         if (other.transform.CompareTag("ChestArea") && number == 5)
         {
             chestAnimator.SetBool("OpenChest", true);
+            AudioManager.Instance.PlaySFX("Chest");
             elements[3] = true;
             Debug.Log("Hava Týlsýmýný aldýk");
         }
         if (other.transform.CompareTag("ChestArea") && number == 6)
         {
             chestAnimator.SetBool("OpenChest", true);
+            AudioManager.Instance.PlaySFX("Chest");
             elements[4] = true;
             Debug.Log("Default Týlsýmýný aldýk");
             other.transform.DOMoveY(0,2f);
@@ -220,7 +228,7 @@ public class PlayerManager : MonoBehaviour
                     headsOnFire[i - 1].active = false;
                 }
                 elementels[i].active = true;
-                
+                AudioManager.Instance.PlaySFX("Patlama");             
             } 
         }
     }
