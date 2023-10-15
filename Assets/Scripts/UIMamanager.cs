@@ -12,6 +12,7 @@ public class UIMamanager : MonoBehaviour
     public TextMeshProUGUI dialogText;
     public int dialogLevel = 1;
     public GameObject cameraCine;
+    public GameObject[] elementUI;
 
     void Awake()
     {

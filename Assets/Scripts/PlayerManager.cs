@@ -130,6 +130,7 @@ public class PlayerManager : MonoBehaviour
             chestAnimator.SetBool("OpenChest", true);
             AudioManager.Instance.PlaySFX("Chest");
             Debug.Log("Buz Týlsýmýný aldýk");
+            UIMamanager.Instance.elementUI[0].SetActive(true);
             //DefultMap(1);
             elements[0] = true;
             // mor adanýn üstü
@@ -151,6 +152,7 @@ public class PlayerManager : MonoBehaviour
             AudioManager.Instance.PlaySFX("Chest");
             elements[1] = true;
             Debug.Log("Lav Týlsýmýný aldýk");
+            UIMamanager.Instance.elementUI[1].SetActive(true);
         }
         if (other.transform.CompareTag("ChestArea") && number == 4)
         {
@@ -158,6 +160,7 @@ public class PlayerManager : MonoBehaviour
             AudioManager.Instance.PlaySFX("Chest");
             elements[2] = true;
             Debug.Log("Toprak Týlsýmýný aldýk");
+            UIMamanager.Instance.elementUI[2].SetActive(true);
         }
         if (other.transform.CompareTag("ChestArea") && number == 5)
         {
@@ -165,6 +168,7 @@ public class PlayerManager : MonoBehaviour
             AudioManager.Instance.PlaySFX("Chest");
             elements[3] = true;
             Debug.Log("Hava Týlsýmýný aldýk");
+            UIMamanager.Instance.elementUI[3].SetActive(true);
         }
         if (other.transform.CompareTag("ChestArea") && number == 6)
         {
@@ -172,6 +176,7 @@ public class PlayerManager : MonoBehaviour
             AudioManager.Instance.PlaySFX("Chest");
             elements[4] = true;
             Debug.Log("Default Týlsýmýný aldýk");
+            UIMamanager.Instance.elementUI[4].SetActive(true);
             other.transform.DOMoveY(0,2f);
 
         }
@@ -196,7 +201,6 @@ public class PlayerManager : MonoBehaviour
                 //gravity = 5;
                 Debug.Log("Boost");
             }
-
         }
 
         if (other.gameObject.tag == "Dede")
