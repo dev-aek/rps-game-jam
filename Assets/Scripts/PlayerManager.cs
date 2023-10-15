@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -239,7 +240,11 @@ public class PlayerManager : MonoBehaviour
                     headsOnFire[i - 1].active = false;
                 }
                 elementels[i].active = true;
-                AudioManager.Instance.PlaySFX("Patlama");             
+                AudioManager.Instance.PlaySFX("Patlama");
+                if (i ==4)
+                {
+                    SceneManager.LoadScene("Finish");
+                }
             } 
         }
     }
