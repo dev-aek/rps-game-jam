@@ -11,6 +11,7 @@ public class UIMamanager : MonoBehaviour
     public GameObject dialogPanel;
     public TextMeshProUGUI dialogText;
     public int dialogLevel = 1;
+    public GameObject cameraCine;
 
     void Awake()
     {
@@ -35,7 +36,7 @@ public class UIMamanager : MonoBehaviour
         if (Input.GetKey(KeyCode.F))
         {
             dialogPanel.active = false;
-
+            cameraCine.active = false;
         }
     }
 
@@ -44,4 +45,6 @@ public class UIMamanager : MonoBehaviour
         dialogText.text = dialogs[i];
         dialogPanel.active = true;
     }
+
+
 }
