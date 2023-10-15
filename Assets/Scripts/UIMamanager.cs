@@ -44,6 +44,30 @@ public class UIMamanager : MonoBehaviour
     {
         dialogText.text = dialogs[i];
         dialogPanel.active = true;
+
+        switch (i)
+        {
+            case 0:
+                AudioManager.Instance.PlaySFX("dg");
+                break;
+            case 1:
+                AudioManager.Instance.PlaySFX("dg1");
+                break;
+            case 2:
+                AudioManager.Instance.PlaySFX("dg2");
+                break;
+            case 3:
+                AudioManager.Instance.PlaySFX("dg3");
+                break;
+            case 4:
+                AudioManager.Instance.PlaySFX("dg4");
+                break;
+            case 5:
+                AudioManager.Instance.PlaySFX("dg5");
+                break;
+            default:
+                break;
+        }
     }
 
 
